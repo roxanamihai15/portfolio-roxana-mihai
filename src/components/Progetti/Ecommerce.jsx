@@ -4,7 +4,7 @@ function Ecommerce() {
   return (
     
 
-    <div className='flex flex-col md:flex-row justify-between items-center px-10 max-w-screen-xl pb-10'>
+    <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>
             
 
         <div className='flex-1 p-5 wrap-img'>
@@ -24,9 +24,9 @@ function Ecommerce() {
                     Sono anche inseriti tra i cookie così in caso di refresh della pagina web rimangono.
                 </p>
                 
-                <div className='mb-3 text-blue-800  text-sm'>
-                    <a href="#" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 w-fit rounded-md text-indigo-500  border-indigo-400'>APRI IL SITO </a>
-                    <a href="#" className='btn hover:text-slate-50 cursor-pointer inline-block py-2 px-4 border-2  w-fit rounded-md text-indigo-500  border-indigo-400'> &lt;/&gt;  GUARDA IL CODICE</a>
+                <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
+                    <a href="#" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
+                    <a href="#" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'> &lt;/&gt;  GUARDA IL CODICE </a>
                 </div>
             </div>
 

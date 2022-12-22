@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
@@ -8,12 +8,38 @@ import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio } from 'react-ico
 
 
 function Skills() {
+
+
+  
+  useEffect(() => {
+
+    const elementiProva = document.querySelectorAll('.hide-top')
+
+    const callbackProva = function (items) {
+        items.forEach(item => {
+            item.target.classList.add('show-anim', item.isIntersecting)
+        });
+        console.log(items);
+    
+    }
+    
+    const observer = new IntersectionObserver(callbackProva, { threshold: 0.5 })
+    
+    elementiProva.forEach((element) => {
+        observer.observe(element)
+    })
+    
+    
+})
+
+
+
   return (
-    <section id="competenze" className=' max-w-screen-xl mx-auto pb-10'>
+    <section id="competenze" className='max-w-screen-xl mx-auto py-16 px-10'>
 
-        <h2 className='text-4xl py-10 text-center font-extrabold text-slate-700'>Competenze</h2>
+        <h2 className='text-4xl pb-10 text-center font-extrabold text-slate-700'>Competenze</h2>
 
-        <div className='flex flex-wrap py-10 px-5 gap-12 justify-evenly max-w-xl mx-auto text-center text-slate-500'>
+        <div className='flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'>
           <div>
             <AiFillHtml5 className='text-4xl mx-auto skill-icon hover:text-red-500'/>
             <p className='pt-3'>HTML5</p>
