@@ -4,7 +4,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap');
 
@@ -23,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 
@@ -42,49 +42,6 @@ code {
   color: #818cf8;
 }
 
-
-
-/* .background {
-  background: #fcefff;
-}
-
-.glass {
-  position: relative;
-  background: white;
-  min-width: 100vw;
-  background: linear-gradient(to right bottom,
-  rgba(255, 255, 255, 0.7),
-  rgba(255, 255, 255, 0.3));
-  z-index: 2;
-  backdrop-filter: blur(8rem);
-  z-index: 5;
-}
-
-.circle1, .circle2 {
-  background: white;
-  background: linear-gradient(to right bottom,
-  rgba(255, 255, 255, 0.9),
-  rgba(255, 255, 255, 0.1));
-  height: 40rem;
-  width: 40rem;
-  position: absolute;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.circle1 {
-  top: 5%;
-  right: 15%;
-  background: #dce8ff;
-}
-.circle2 {
-  bottom: 5%;
-  left: 15%;
-  background: #f1e3ff;
-} */
-
-
-
 h1, h2, h3, p, li, a {
   color: #313149;
 }
@@ -99,7 +56,7 @@ h1, h2, h3, p, li, a {
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Karla', sans-serif;
   letter-spacing: 0.5px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 li {
@@ -212,11 +169,16 @@ p {
 
 
 /* ANIMAZIONI */
+.hide {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s ease-in
+}
+
 .hide-rigth {
   opacity: 0;
-  /* transform: translateX(100px); */
+  transform: translateX(100px);
   filter: blur(5px);
-  /* overflow: hidden; */
   transition: all 1s ease-in
 }
 
@@ -224,20 +186,18 @@ p {
   opacity: 0;
   transform: translateX(-100px);
   filter: blur(5px);
-  /* overflow: hidden; */
   transition: all 1s ease-in
 }
+
 
 .hide-top {
   opacity: 0;
   transform: translateY(-100px);
   filter: blur(5px);
-  /* overflow: hidden; */
   transition: all 1s ease-in
 }
 
 .show-anim {
-  /* background-color: aqua; */
   filter: blur(0);
   transform: translate(0);
   opacity: 1;

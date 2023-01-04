@@ -2,6 +2,8 @@ import Ecommerce from './Ecommerce'
 import Finto from './Finto'
 import Todo from './Todo'
 
+
+
 function Progetti() {
   return (
     <section id="progetti" className='max-w-screen-xl mx-auto py-12'>

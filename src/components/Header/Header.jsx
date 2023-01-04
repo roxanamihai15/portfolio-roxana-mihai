@@ -1,59 +1,18 @@
-import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-
-
 
 
 function Header() {
 
-    // const elementiProva = document.querySelectorAll('.hide')
-
-    // const callbackProva = function (items) {
-    //     items.forEach(item => {
-    //         item.target.classList.toggle('show-anim', item.isIntersecting)
-    //     });
-    //     console.log(items);
-    
-    // }
-    
-    // const observer = new IntersectionObserver(callbackProva, { threshold: 0.5 })
-    // // const observer = new IntersectionObserver(callbackProva, { threshold:  })
-    
-    // elementiProva.forEach((element) => {
-    //     observer.observe(element)
-    // })
-
-
-    
-
-    useEffect(() => {
-
-        const elementiProva = document.querySelectorAll('.hide-rigth')
-
-        const callbackProva = function (items) {
-            items.forEach(item => {
-                item.target.classList.add('show-anim', item.isIntersecting)
-            });
-            console.log(items);
-        
-        }
-        
-        const observer = new IntersectionObserver(callbackProva, { threshold: 0.5 })
-        
-        elementiProva.forEach((element) => {
-            observer.observe(element)
-        })
-        
-        
-    })
-
-
+    const { ref: elementRef, inView: elementRefVisible} = useInView();
 
   return (
     <>
     <header id="about" className='flex flex-col items-center px-10 py-20 max-w-screen-xl mx-auto md:flex-row justify-between md:pt-18 lg:gap-44 md:py-32'>
 
-        <div className='flex flex-col gap-3 hide-rigth'>
+        {/* <div className='flex flex-col gap-3 hide-rigth'> */}
+        <div ref={elementRef}  className={`${'flex flex-col gap-3 hide'} ${elementRefVisible ? 'show-anim' : ''}`}>
+
             <div className='flex gap-2 items-center'>
                 <img src="./images/mano-saluta.png" alt="" className='max-h-6' />
                 <h3 className='text-xl lg:text-xl '>
@@ -69,11 +28,8 @@ function Header() {
             </p>
 
             <div className='flex flex-col gap-3 text-center pb-5 mx-auto w-full sm:flex-row sm:gap-8 md:mx-0' >
-
                     <a className='text-sm cursor-pointer text-slate-50 py-2 p-2 pr-3 border-2 border-indigo-400 rounded-md bg-indigo-400 move-button hover:text-white'>   <AiFillLinkedin className='text-4xl inline' /> Profilo Linkedin    </a>
-
-                    <a className='btn text-sm hover:text-slate-50 cursor-pointer text-indigo-400 py-2 p-2 pr-3 border-2 border-indigo-400 rounded-md md:mt-0'>   <AiFillGithub className='text-4xl inline' /> Profilo Github    </a>
-
+                    <a href='https://github.com/roxanamihai15' target='_blank' className='btn text-sm hover:text-slate-50 cursor-pointer text-indigo-400 py-2 p-2 pr-3 border-2 border-indigo-400 rounded-md md:mt-0'>   <AiFillGithub className='text-4xl inline' /> Profilo Github    </a>
             </div>
         </div>
 

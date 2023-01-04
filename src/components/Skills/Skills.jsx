@@ -1,37 +1,16 @@
 import React, { useEffect, useRef } from 'react'
 
-import { BsFillMoonStarsFill } from 'react-icons/bs'
-import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
+import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 
 import { FaCss3Alt, FaBootstrap, FaGitAlt, FaReact, FaWordpress } from 'react-icons/fa'
 import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio } from 'react-icons/si'
 
+import { useInView } from 'react-intersection-observer';
+
 
 function Skills() {
 
-
-  
-  useEffect(() => {
-
-    const elementiProva = document.querySelectorAll('.hide-top')
-
-    const callbackProva = function (items) {
-        items.forEach(item => {
-            item.target.classList.add('show-anim', item.isIntersecting)
-        });
-        console.log(items);
-    
-    }
-    
-    const observer = new IntersectionObserver(callbackProva, { threshold: 0.5 })
-    
-    elementiProva.forEach((element) => {
-        observer.observe(element)
-    })
-    
-    
-})
-
+  const { ref: elementRef, inView: elementRefVisible} = useInView();
 
 
   return (
@@ -39,7 +18,9 @@ function Skills() {
 
         <h2 className='text-4xl pb-10 text-center font-extrabold text-slate-700'>Competenze</h2>
 
-        <div className='flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'>
+        {/* <div className='flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'> */}
+        <div ref={elementRef}  className={`${'flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'} ${elementRefVisible ? 'show-anim' : ''}`}>
+
           <div>
             <AiFillHtml5 className='text-4xl mx-auto skill-icon hover:text-red-500'/>
             <p className='pt-3'>HTML5</p>
@@ -52,10 +33,6 @@ function Skills() {
             <SiJavascript className='text-4xl  mx-auto hover:text-yellow-400'/>
             <p  className='pt-3'>JavaScript<span className='block text-center'> ES6</span></p>
           </div>
-          {/* <div>
-            <SiJavascript className='text-4xl  mx-auto text-yellow-400'/>
-            <p>JavaScript<span className='block text-center'> ES6</span></p>
-          </div> */}
           <div>
             <FaReact className='text-4xl  mx-auto hover:text-blue-600'/>
             <p  className='pt-3'>React</p>
@@ -65,7 +42,7 @@ function Skills() {
             <p  className='pt-3'>Bootstrap</p>
           </div>
           <div>
-            <SiTailwindcss className='text-4xl  mx-auto hover:text-green-700'/>
+            <SiTailwindcss className='text-4xl  mx-auto hover:text-teal-700'/>
             <p  className='pt-3'>Tailwind</p>
           </div>
           <div>
@@ -80,10 +57,6 @@ function Skills() {
             <SiVisualstudio className='text-4xl  mx-auto hover:text-blue-700'/>
             <p  className='pt-3'>Visual Studio <span className='block text-center'>Code</span></p>
           </div>
-          {/* <div>
-            <SiVisualstudio className='text-4xl  mx-auto text-blue-700'/>
-            <p>Visual Studio Code</p>
-          </div> */}
           <div>
             <SiJquery className='text-4xl  mx-auto hover:text-blue-900'/>
             <p  className='pt-3'>JQuery</p>

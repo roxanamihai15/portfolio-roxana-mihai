@@ -1,5 +1,11 @@
+import { useInView } from 'react-intersection-observer';
+
 
 function Finto() {
+
+    const { ref: elementRef, inView: elementRefVisible} = useInView();
+
+
   return (
 
 
@@ -7,10 +13,12 @@ function Finto() {
             
 
 
-        <div className='flex-1 p-5 order-1 lg:order-none'>
+        {/* <div className='flex-1 p-5 order-1 lg:order-none'> */}
+        <div ref={elementRef} className={`${'flex-1 p-5 order-1 lg:order-none hide-rigth'} ${elementRefVisible ? 'show-anim' : ''}`}>
+
+            
             <div className='mb-3 text-slare-800 text-xs'>
                 <span className='bg-cyan-500 inline-block mr-2 py-2 w-fit rounded-md px-4'>Wordpress</span>
-
             </div>
 
             <h3 className='pb-4 text-xl font-bold'>Progetto finto</h3>
@@ -29,8 +37,11 @@ function Finto() {
 
         </div>
 
-        <div className='flex-1 p-5 wrap-img'>
-            <img src="./images/web3.png" alt="" className='rounded-xl' />
+        {/* <div className='flex-1 p-5 wrap-img'> */}
+
+        <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
+            <img src="./images/olistica-serendipity.png" alt="" className='rounded-xl' />
+            {/* <img src="./images/web3.png" alt="" className='rounded-xl' /> */}
         </div>
 
 

@@ -1,17 +1,11 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 import './Navbar.css'
-// import './navbar2.css'
-
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { VscClose } from 'react-icons/vsc'
 
 
 function Navbar() {
-
-
-
-
 
   const navRef = useRef();
 
@@ -19,39 +13,18 @@ function Navbar() {
 		navRef.current.classList.toggle("responsive-nav");
 	};
 
-
-
   return (
 
     <nav className='flex justify-between text-md 2xl:text-xl py-5 px-10 max-w-screen-xl mx-auto custom-color' id='home'>
         <a href='#home' className='logo text-slate-600'>Roxana Mihai</a>
         <button onClick={showNavbar} className='nav-btn text-2xl py-1 px-3 text-slate-600'> <RxHamburgerMenu />  </button>
         <ul ref={navRef} className=' items-center gap-6 font-normal'>
-            <li className=''><a href="#about">About</a></li>
-            <li><a href="#competenze">Skills</a></li>
-            <li><a href="#progetti">Progetti</a></li>
+            <li className=''><a onClick={showNavbar} href="#about">About</a></li>
+            <li><a onClick={showNavbar} href="#competenze">Skills</a></li>
+            <li><a onClick={showNavbar} href="#progetti">Progetti</a></li>
             <button onClick={showNavbar} className='nav-btn nav-close-btn text-2xl'> <VscClose /> </button>
         </ul>
     </nav>
-
-    // <header>
-		// 	<h3>LOGO</h3>
-		// 	<nav ref={navRef}>
-		// 		<a href="/#">Home</a>
-		// 		<a href="/#">My work</a>
-		// 		<a href="/#">Blog</a>
-		// 		<a href="/#">About me</a>
-		// 		<button
-		// 			className="nav-btn nav-close-btn"
-		// 			onClick={showNavbar}>
-		// 			<VscClose />
-		// 		</button>
-		// 	</nav>
-		// 	<button className="nav-btn" onClick={showNavbar}>
-		// 		<RxHamburgerMenu />
-		// 	</button>
-		// </header>
-
   )
 }
 
