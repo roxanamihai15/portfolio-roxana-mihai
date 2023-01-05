@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Ecommerce() {
 
-    const { ref: elementRef, inView: elementRefVisible} = useInView();
+    const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
   return (
     

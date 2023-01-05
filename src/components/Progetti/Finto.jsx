@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Finto() {
 
-    const { ref: elementRef, inView: elementRefVisible} = useInView();
+    const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
 
   return (

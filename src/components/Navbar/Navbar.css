@@ -43,7 +43,8 @@ ul {
     nav .nav-close-btn {
     position: absolute;
     top: 2rem;
-    right: 3rem;
+    /* right: 6.5rem; */
+    right: 23%;
 }
 
 

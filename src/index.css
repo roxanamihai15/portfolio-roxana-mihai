@@ -31,7 +31,6 @@ code {
     monospace;
 }
 
-
 /* questo mettilo in tailwind */
 .text-stroked {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -206,5 +205,3 @@ p {
 .delay-anim {
   transition-delay: 700ms;
 }
-
-

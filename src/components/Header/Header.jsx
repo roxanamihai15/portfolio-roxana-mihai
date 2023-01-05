@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 
 function Header() {
 
-    const { ref: elementRef, inView: elementRefVisible} = useInView();
+    const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
   return (
     <>

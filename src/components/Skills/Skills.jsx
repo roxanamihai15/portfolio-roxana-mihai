@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Skills() {
 
-  const { ref: elementRef, inView: elementRefVisible} = useInView();
+  const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
 
   return (
