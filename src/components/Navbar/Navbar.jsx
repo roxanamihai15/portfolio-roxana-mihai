@@ -16,7 +16,7 @@ function Navbar() {
   return (
 
     <nav className='flex justify-between text-md 2xl:text-xl py-5 px-10 max-w-screen-xl mx-auto custom-color' id='home'>
-        <a href='#home' className='logo text-slate-600'>Roxana Mihai</a>
+        <a href='#home' className='logo text-slate-600 font-medium text-xl'>Roxana Mihai</a>
         <button onClick={showNavbar} className='nav-btn text-2xl py-1 px-3 text-slate-600'> <RxHamburgerMenu />  </button>
         <ul ref={navRef} className=' items-center gap-6 font-normal'>
             <li className=''><a onClick={showNavbar} href="#about">About</a></li>

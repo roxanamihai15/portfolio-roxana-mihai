@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+// import React, { useEffect, useRef } from 'react'
 
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 
@@ -18,9 +18,7 @@ function Skills() {
 
         <h2 className='text-4xl pb-10 text-center font-extrabold text-slate-700'>Competenze</h2>
 
-        {/* <div className='flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'> */}
         <div ref={elementRef}  className={`${'flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-xl mx-auto text-center text-slate-500 hide-top sm:gap-12'} ${elementRefVisible ? 'show-anim' : ''}`}>
-
           <div>
             <AiFillHtml5 className='text-4xl mx-auto skill-icon hover:text-red-500'/>
             <p className='pt-3'>HTML5</p>
@@ -66,7 +64,6 @@ function Skills() {
             <p  className='pt-3'>Wordpress</p>
           </div>
         </div>
-
     </section>
   )
 }

@@ -7,10 +7,8 @@ function Header() {
     const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
   return (
-    <>
     <header id="about" className='flex flex-col items-center px-10 py-20 max-w-screen-xl mx-auto md:flex-row justify-between md:pt-18 lg:gap-44 md:py-32'>
 
-        {/* <div className='flex flex-col gap-3 hide-rigth'> */}
         <div ref={elementRef}  className={`${'flex flex-col gap-3 hide'} ${elementRefVisible ? 'show-anim' : ''}`}>
 
             <div className='flex gap-2 items-center'>
@@ -19,7 +17,7 @@ function Header() {
                     Ciao! Sono<span className='text-indigo-400 font-bold'> Roxana </span>
                 </h3>
             </div>
-            <h1 className='text-4xl pt-2 font-extrabold text-stroked'>
+            <h1 className='text-4xl pt-2 font-extrabold text-indigo-400 text-stroked'>
                 Junior Frontend Developer
             </h1>
             <p className='text-md leading-9 py-3'>
@@ -34,7 +32,6 @@ function Header() {
         </div>
 
     </header>
-    </>
   )
 }
 

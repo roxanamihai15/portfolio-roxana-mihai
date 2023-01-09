@@ -13,7 +13,6 @@ function Finto() {
             
 
 
-        {/* <div className='flex-1 p-5 order-1 lg:order-none'> */}
         <div ref={elementRef} className={`${'flex-1 p-5 order-1 lg:order-none hide-rigth'} ${elementRefVisible ? 'show-anim' : ''}`}>
 
             
@@ -37,11 +36,9 @@ function Finto() {
 
         </div>
 
-        {/* <div className='flex-1 p-5 wrap-img'> */}
 
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
-            <img src="./images/olistica-serendipity.png" alt="" className='rounded-xl' />
-            {/* <img src="./images/web3.png" alt="" className='rounded-xl' /> */}
+            <a href="https://www.olisticaserendip.it/" target='_blank' title='Vai al sito'><img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"/></a>
         </div>
 
 

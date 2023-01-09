@@ -12,13 +12,10 @@ function Ecommerce() {
     <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>
             
 
-        {/* <div className='flex-1 p-5 wrap-img'> */}
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-left delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
-            <img src="./images/e-commerce.png" alt="" className='rounded-xl' />
-            {/* <img src="./images/progetto-3.jfif" alt="" className='rounded-xl' /> */}
+            <a href="https://shoponlineroxana.netlify.app/" target='_blank' title='Vai al sito'><img src="./images/shop-preview.png" alt="Preview progetto e-commerce"/></a>
         </div>
 
-        {/* <div className='flex-1 p-5'> */}
         <div ref={elementRef} className={`${'flex-1 p-5 hide-left'} ${elementRefVisible ? 'show-anim' : ''}`}>
             <div className='mb-3 text-slare-800 text-xs'>
                 <span className='bg-blue-200 inline-block mr-2 py-2 w-fit rounded-md px-4'>React</span>

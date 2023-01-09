@@ -9,8 +9,7 @@ function Todo() {
     <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>
         
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-left delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
-            <img src="./images/todolist.png" alt="" className='rounded-xl' />
-            {/* <img src="./images/progetto-1.png" alt="" className='rounded-xl' /> */}
+            <a href="https://todolistroxana.netlify.app/" target='_blank' title='Vai al sito'><img src="./images/todo-preview.png" alt="Preview progetto to do list"  /></a>
         </div>
 
         <div ref={elementRef} className={`${'flex-1 p-5 hide-left'} ${elementRefVisible ? 'show-anim' : ''}`}>
