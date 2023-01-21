@@ -10,11 +10,16 @@ function App() {
   return (
     
     <div className="bg-slate-50">
+      <div class="pattern">
+
       <Navbar />
       <Header />
+
+      </div>
       <Skills />
       <Progetti />
-      <div className="bg-indigo-400">
+      <div className="contact">
+      {/* <div className="bg-indigo-400 contact"> */}
         <Contact />
       </div>
       <Footer />

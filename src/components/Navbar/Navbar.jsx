@@ -20,7 +20,7 @@ function Navbar() {
         <button onClick={showNavbar} className='nav-btn text-2xl py-1 px-3 text-slate-600'> <RxHamburgerMenu />  </button>
         <ul ref={navRef} className=' items-center gap-6 font-normal'>
             <li className=''><a onClick={showNavbar} href="#about">About</a></li>
-            <li><a onClick={showNavbar} href="#competenze">Skills</a></li>
+            <li><a onClick={showNavbar} href="#competenze">Competenze</a></li>
             <li><a onClick={showNavbar} href="#progetti">Progetti</a></li>
             <button onClick={showNavbar} className='nav-btn nav-close-btn text-2xl'> <VscClose /> </button>
         </ul>

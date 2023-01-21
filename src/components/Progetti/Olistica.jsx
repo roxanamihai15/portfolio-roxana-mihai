@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 
 
-function Finto() {
+function Olistica() {
 
     const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
 
@@ -17,19 +17,18 @@ function Finto() {
 
             
             <div className='mb-3 text-slare-800 text-xs'>
-                <span className='bg-cyan-500 inline-block mr-2 py-2 w-fit rounded-md px-4'>Wordpress</span>
+                <span className='bg-cyan-500 inline-block mr-2 py-2 w-fit rounded-md px-4 badge'>Wordpress</span>
             </div>
 
-            <h3 className='pb-4 text-xl font-bold'>Progetto finto</h3>
+            <h3 className='pb-4 text-xl font-bold'>Olistica Serendipity</h3>
             <div className=''>
-                <p className=' py-2 mb-5 leading-8 project-description'>Ho sviluppato una todo list per tenere traccia dei propri impegni.
-                    I progetti si possono aggiungere, modificare e cancellare.
-                    Sono anche inseriti tra i cookie così in caso di refresh della pagina web rimangono
+                <p className=' py-2 mb-5 leading-8 project-description'>
+                Sviluppo web di un sito dinamico per il cliente Olistica serendipity. Il sito è stato realizzato in Wordpress con il tema Divi e diversi plug-in, utili a una migliore fruizione del sito web da parte dell’utente.
                 </p>
+              
                 
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
                     <a href="https://www.olisticaserendip.it/" target='_blank' className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
-                    <a href="#" target='_blank' className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'> &lt;/&gt;  GUARDA IL CODICE </a>
                 </div>
             </div>
 
@@ -38,7 +37,17 @@ function Finto() {
 
 
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
-            <a href="https://www.olisticaserendip.it/" target='_blank' title='Vai al sito'><img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"/></a>
+            <a href="https://www.olisticaserendip.it/" target='_blank' title='Vai al sito'>
+
+
+                <picture>
+                    <source srcset="./images/olistica-preview.avif" />
+                    <source srcset="./images/olistica-preview.webp" />
+                    <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"  />
+                </picture>
+                
+                {/* <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"/> */}
+            </a>
         </div>
 
 
@@ -48,4 +57,4 @@ function Finto() {
   )
 }
 
-export default Finto
+export default Olistica
