@@ -35,7 +35,7 @@ function Ecommerce() {
             <h3 className='pb-4 text-xl font-bold'>E-commerce</h3>
             <div className=''>
                 <p className=' py-2 mb-5 leading-8 project-description'>
-                    Sviluppo di un E-Commerce scritto in codice partendo da zero con le funzionalità base di un classico shop online. I prodotti fanno parte dell'API gratuito "Fake Store API". Il sito è stato realizzato utilizzando React.js e Bootstrap.
+                    Sviluppo di un E-Commerce scritto in codice partendo da zero con le funzionalità base di un classico shop online. I prodotti fanno parte dell'API gratuito "Fake Store API". Il sito è stato realizzato utilizzando React.js  e Bootstrap.
                 </p>
                 
                   {/* <p className=' py-2 mb-5 leading-8 project-description'>
