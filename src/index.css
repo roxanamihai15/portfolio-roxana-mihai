@@ -184,21 +184,21 @@ a:hover::before {
 
 .hide-rigth {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(20px);
   filter: blur(5px);
   transition: all 1s ease-in
 }
 
 .hide-left {
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-20px);
   filter: blur(5px);
   transition: all 1s ease-in
 }
 
 .hide-top {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-100px);
   filter: blur(5px);
   transition: all 1s ease-in
 }
