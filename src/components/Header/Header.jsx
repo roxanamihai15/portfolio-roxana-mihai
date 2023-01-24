@@ -15,8 +15,7 @@ function Header() {
 
             {/* <div className='flex gap-2 items-center text-center justify-self-center mx-auto'> */}
             <div className='flex gap-2 items-center'>
-                {/* <img src="./images/mano-saluta.png" alt="" className='max-h-6' /> */}
-                {/* <img src="./images/saluto.png" alt="" className='max-h-6' /> */}
+
                 <img src="./images/hand.png" alt="" className='max-h-7' />
                 <h3 className='text-lg lg:text-xl '>
                     Ciao! Sono<span className='text-indigo-400 font-bold'> Roxana </span>

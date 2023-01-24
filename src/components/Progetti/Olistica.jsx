@@ -41,12 +41,10 @@ function Olistica() {
 
 
                 <picture>
-                    <source srcset="./images/olistica-preview.avif" />
                     <source srcset="./images/olistica-preview.webp" />
                     <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"  />
                 </picture>
                 
-                {/* <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"/> */}
             </a>
         </div>
 

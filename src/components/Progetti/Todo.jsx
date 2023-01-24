@@ -12,12 +12,10 @@ function Todo() {
             <a href="https://todolistroxana.netlify.app/" target='_blank' title='Vai al sito'>
 
                 <picture>
-                    <source srcset="./images/todo-preview.avif" />
                     <source srcset="./images/todo-preview.webp" />
                     <img src="./images/todo-preview.png" alt="Preview progetto to do list"  />
                 </picture>
 
-                {/* <img src="./images/todo-preview.png" alt="Preview progetto to do list"  /> */}
             </a>
         </div>
 
@@ -34,10 +32,7 @@ function Todo() {
                 {/* <p className=' py-2 mb-5 leading-8 project-description'>
                     Se come me sei portato a scrivere una lista di cose da fare infinita, quest'app è adatta a te! Ti costringe ad avere un massimo di 10 impegni per volta ed organizzarli per categoria.
                 </p> */}
-                {/* <p className=' py-2 mb-5 leading-8 project-description'>Ho sviluppato una todo list per tenere traccia dei propri impegni.
-                    I progetti si possono aggiungere, modificare e cancellare.
-                    Sono anche inseriti tra i cookie così in caso di refresh della pagina web rimangono
-                </p> */}
+
             
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
                     <a href="https://todolistroxana.netlify.app/" target='_blank' className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>

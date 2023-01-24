@@ -12,10 +12,7 @@ ul {
 	align-items: center;
 }
 
-.white-mode li a,
-.white-mode button {
-	color: #f8fafc;
-}
+
 
 @media only screen and (max-width: 1024px) {
 	nav .nav-btn {
@@ -49,6 +46,11 @@ ul {
 		position: absolute;
 		top: 2rem;
 		left: 91%;
+	}
+
+	.white-mode li a,
+	.white-mode button {
+		color: #f8fafc;
 	}
 }
 

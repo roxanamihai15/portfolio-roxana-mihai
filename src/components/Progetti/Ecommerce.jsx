@@ -16,13 +16,11 @@ function Ecommerce() {
             <a href="https://shoponlineroxana.netlify.app/" target='_blank' title='Vai al sito'>
 
                 <picture>
-                    <source srcset="./images/shop-preview.avif" />
                     <source srcset="./images/shop-preview.webp" />
                     <img src="./images/shop-preview.png" alt="Preview progetto e-commerce"  />
                 </picture>
 
 
-                {/* <img src="./images/shop-preview.png" alt="Preview progetto e-commerce"/> */}
             </a>
         </div>
 
@@ -38,9 +36,6 @@ function Ecommerce() {
                     Sviluppo di un E-Commerce scritto in codice partendo da zero con le funzionalità base di un classico shop online. I prodotti fanno parte dell'API gratuito "Fake Store API". Il sito è stato realizzato utilizzando React.js  e Bootstrap.
                 </p>
                 
-                  {/* <p className=' py-2 mb-5 leading-8 project-description'>
-                E-commerce costruito sull'API .....
-                </p> */}
 
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
                     <a href="https://shoponlineroxana.netlify.app/" target='_blank' className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
