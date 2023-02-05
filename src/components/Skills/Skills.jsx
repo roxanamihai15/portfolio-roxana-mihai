@@ -1,17 +1,12 @@
-// import React, { useEffect, useRef } from 'react'
-
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
-
 import { FaCss3Alt, FaBootstrap, FaGitAlt, FaReact, FaWordpress } from 'react-icons/fa'
 import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio } from 'react-icons/si'
-
 import { useInView } from 'react-intersection-observer';
 
 
 function Skills() {
 
   const { ref: elementRef, inView: elementRefVisible} = useInView({triggerOnce: true});
-
 
   return (
     <section id="competenze" className='max-w-screen-xl mx-auto py-16 px-10'>

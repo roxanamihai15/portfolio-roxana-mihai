@@ -12,8 +12,6 @@ ul {
 	align-items: center;
 }
 
-
-
 @media only screen and (max-width: 1024px) {
 	nav .nav-btn {
 		display: inline-block;

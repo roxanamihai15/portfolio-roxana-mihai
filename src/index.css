@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -40,29 +39,19 @@ body {
   transform: scale(1.3);
 }
 
-
 .pattern {
   background-image: linear-gradient(rgb(248, 250, 252, 0.3), rgba(248, 250, 252, 0.4), rgba(248, 250, 252)), url(../public/images/Dotted_grid.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
 .contact {
   background-image: url(../public/images/mail-pattern.png);
-  /* background-image: url(../public/images/contact-pattern-2.png); */
-  /* background-image: url(../public/images/contact-bg.svg);
-  background-image: url(../public/images/contact-bg-2.svg);
-  background-image: url(../public/images/contact-bg-3.svg); */
   background-size: contain;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-
 
 .text-stroked {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -71,8 +60,6 @@ body {
   letter-spacing: 0.8px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-
 
 header h1 span {
     display: inline-block;
@@ -100,10 +87,6 @@ h3 {
 h1, h2, h3, li, a, p {
   color: #313149;
 }
-/* 
-p {
-  color: #475569;
-} */
 
 .logo {
   letter-spacing: 0.5px;
@@ -131,15 +114,6 @@ ul a::before {
 a:hover::before {
   transform: translate(-50%) scaleX(1);
 }
-
-
-/* .container-wrapper {
-  position: relative;
-} */
-
-
-
-
 
 /* hover button */
 .btn {

@@ -7,12 +7,7 @@ function Olistica() {
 
 
   return (
-
-
-    <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>
-            
-
-
+    <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>           
         <div ref={elementRef} className={`${'flex-1 p-5 order-1 lg:order-none hide-rigth'} ${elementRefVisible ? 'show-anim' : ''}`}>
 
             
@@ -26,31 +21,20 @@ function Olistica() {
                 Sviluppo web di un sito dinamico per il cliente Olistica serendipity. Il sito è stato realizzato in Wordpress con il tema Divi e diversi plug-in, utili a una migliore fruizione del sito web da parte dell’utente.
                 </p>
               
-                
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
-                    <a href="https://www.olisticaserendip.it/" target='_blank' className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
+                    <a href="https://www.olisticaserendip.it/" target='_blank' rel="noreferrer" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
                 </div>
             </div>
-
-
         </div>
-
-
-        <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
-            <a href="https://www.olisticaserendip.it/" target='_blank' title='Vai al sito'>
-
+        <div ref={elementRef}  className={`${'flex-1 px-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
+            <a href="https://www.olisticaserendip.it/" target='_blank' rel="noreferrer" title='Vai al sito'>
 
                 <picture>
                     <source srcset="./images/olistica-preview.webp" />
                     <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"  />
-                </picture>
-                
+                </picture>              
             </a>
         </div>
-
-
-
-
     </div>
   )
 }
