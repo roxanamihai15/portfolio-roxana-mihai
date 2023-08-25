@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 import { FaCss3Alt, FaBootstrap, FaGitAlt, FaReact, FaWordpress } from 'react-icons/fa'
-import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio } from 'react-icons/si'
+import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio, SiMui } from 'react-icons/si'
 import { useInView } from 'react-intersection-observer';
 
 
@@ -37,6 +37,10 @@ function Skills() {
           <div>
             <SiTailwindcss className='text-4xl  mx-auto hover:text-teal-700'/>
             <p  className='pt-3'>Tailwind</p>
+          </div>
+          <div>
+            <SiMui className='text-4xl  mx-auto hover:text-sky-300'/>
+            <p  className='pt-3'>Material UI</p>
           </div>
           <div>
             <FaGitAlt className='text-4xl  mx-auto hover:text-red-500'/>
