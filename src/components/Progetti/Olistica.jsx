@@ -29,11 +29,11 @@ function Olistica() {
                 </div>
             </div>
         </div>
-        <div ref={elementRef}  className={`${'flex-1 px-5 wrap-img hide-rigth  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
+        <div ref={elementRef}  className={`${'flex-1 px-5 wrap-img hide-rigth lg:flex lg:justify-end  delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
             <a href="https://www.olisticaserendip.it/" target='_blank' rel="noreferrer" title='Vai al sito'>
 
-                <picture>
-                    <source srcset="./images/olistica-preview.webp" />
+                <picture className='inline-block md:mr-0 rounded-lg'>
+                    <source srcSet="./images/olistica-preview.webp" />
                     <img src="./images/olistica-preview.png" alt="Preview sito web Olistica Serendipity"  />
                 </picture>              
             </a>

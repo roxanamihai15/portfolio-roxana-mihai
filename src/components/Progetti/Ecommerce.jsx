@@ -14,8 +14,8 @@ function Ecommerce() {
 
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-left delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
             <a href="https://shoponlineroxana.netlify.app/" target='_blank' rel="noreferrer" title='Vai al sito'>
-                <picture className="inline-block lg:mr-auto">
-                    <source srcset="./images/shop-preview.webp" />
+                <picture className="inline-block lg:mr-auto rounded-lg">
+                    <source srcSet="./images/shop-preview.webp" />
                     <img src="./images/shop-preview.png" alt="Preview progetto e-commerce"  />
                 </picture>
             </a>

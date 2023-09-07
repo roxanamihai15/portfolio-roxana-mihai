@@ -8,8 +8,8 @@ function Todo() {
     <div className='flex flex-col lg:flex-row justify-between items-center px-10 max-w-screen-xl py-6'>        
         <div ref={elementRef}  className={`${'flex-1 p-5 wrap-img hide-left delay-anim'} ${elementRefVisible ? 'show-anim' : ''}`}>
             <a href="https://dailytodoroxana.netlify.app/" target='_blank' rel="noreferrer" title='Vai al sito'>
-                <picture className="inline-block lg:mr-auto">
-                    <source srcset="./images/todo-preview2.webp" />
+                <picture className="inline-block lg:mr-auto  rounded-lg">
+                    <source srcSet="./images/todo-preview2.webp" />
                     <img src="./images/todo-preview2.png" alt="Preview progetto to do list"  />
                 </picture>
             </a>

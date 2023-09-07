@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="bg-slate-50">
-      <div class="pattern">
+      <div className="pattern">
         <Navbar />
         <Header />
       </div>

@@ -15,51 +15,51 @@ function Skills() {
 
         <div ref={elementRef}  className={`${'flex flex-wrap py-10 px-5 gap-10  justify-evenly max-w-2xl mx-auto text-center text-slate-500 hide-top sm:gap-12'} ${elementRefVisible ? 'show-anim' : ''}`}>
           <div>
-            <AiFillHtml5 className='text-4xl mx-auto skill-icon hover:text-red-500'/>
+            <AiFillHtml5 className='text-4xl mx-auto skill-icon text-red-500'/>
             <p className='pt-3'>HTML5</p>
           </div>
           <div>
-            <FaCss3Alt className='text-4xl  mx-auto hover:text-orange-500'/>
+            <FaCss3Alt className='text-4xl  mx-auto text-orange-500'/>
             <p  className='pt-3'>CSS3</p>
           </div>
           <div>
-            <SiJavascript className='text-4xl  mx-auto hover:text-yellow-400'/>
+            <SiJavascript className='text-4xl  mx-auto text-yellow-400'/>
             <p  className='pt-3'>JavaScript<span className='block text-center'> ES6</span></p>
           </div>
           <div>
-            <FaReact className='text-4xl  mx-auto hover:text-blue-600'/>
+            <FaReact className='text-4xl  mx-auto text-blue-600'/>
             <p  className='pt-3'>React</p>
           </div>
           <div>
-            <FaBootstrap className='text-4xl  mx-auto hover:text-violet-700'/>
+            <FaBootstrap className='text-4xl  mx-auto text-violet-700'/>
             <p  className='pt-3'>Bootstrap</p>
           </div>
           <div>
-            <SiTailwindcss className='text-4xl  mx-auto hover:text-teal-700'/>
+            <SiTailwindcss className='text-4xl  mx-auto text-teal-700'/>
             <p  className='pt-3'>Tailwind</p>
           </div>
           <div>
-            <SiMui className='text-4xl  mx-auto hover:text-sky-300'/>
+            <SiMui className='text-4xl  mx-auto text-sky-300'/>
             <p  className='pt-3'>Material UI</p>
           </div>
           <div>
-            <FaGitAlt className='text-4xl  mx-auto hover:text-red-500'/>
+            <FaGitAlt className='text-4xl  mx-auto text-red-500'/>
             <p  className='pt-3'>Git</p>
           </div>
           <div>
-            <AiFillGithub className='text-4xl  mx-auto hover:text-slate-800'/>
+            <AiFillGithub className='text-4xl  mx-auto text-slate-800'/>
             <p  className='pt-3'>Github</p>
           </div>
           <div>
-            <SiVisualstudio className='text-4xl  mx-auto hover:text-blue-700'/>
+            <SiVisualstudio className='text-4xl  mx-auto text-blue-700'/>
             <p  className='pt-3'>Visual Studio <span className='block text-center'>Code</span></p>
           </div>
-          <div>
-            <SiJquery className='text-4xl  mx-auto hover:text-blue-900'/>
+          {/* <div>
+            <SiJquery className='text-4xl  mx-auto text-blue-900'/>
             <p  className='pt-3'>JQuery</p>
-          </div>
+          </div> */}
           <div>
-            <FaWordpress className='text-4xl  mx-auto hover:text-cyan-700'/>
+            <FaWordpress className='text-4xl  mx-auto text-cyan-700'/>
             <p  className='pt-3'>Wordpress</p>
           </div>
         </div>
