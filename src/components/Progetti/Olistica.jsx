@@ -20,9 +20,6 @@ function Olistica() {
                 <p className=' py-2 mb-5 leading-8 project-description'>
                     Sviluppo web di un sito web per il cliente Olistica serendipity. Il sito è stato realizzato in Wordpress con il tema Divi.
                 </p>
-                {/* <p className=' py-2 mb-5 leading-8 project-description'>
-                    Sviluppo web di un sito web per il cliente Olistica serendipity. Il sito è stato realizzato in Wordpress con il tema Divi e diversi plug-in, utili a una migliore fruizione del sito web da parte dell’utente.
-                </p> */}
               
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
                     <a href="https://www.olisticaserendip.it/" target='_blank' rel="noreferrer" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>

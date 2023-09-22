@@ -22,12 +22,10 @@ function Header() {
             </h1>
 
             <p className='text-xl leading-9 py-3'>
-            {/* Sono una Sviluppatrice Front End. Mi piace scrivere codice per dare vita a esperienze digitali. Sono sempre alla ricerca di nuove cose da scoprire e imparare per trasformare idee creative in vere web experiences. */}
                 Sono una Sviluppatrice Front-end e mi piace scrivere codice per creare esperienze digitali significative. 
                 <br />
                 Sono sempre alla ricerca di nuove tecnologie da imparare per trasformare idee creative in interfacce utente d'impatto e facili da navigare. 
             
-                {/* migliorare l'esperienza dell'utente. */}
             </p>
 
             <div className='flex flex-col gap-3 text-center pb-5 mx-auto w-full sm:flex-row sm:gap-8 md:mx-0' >
@@ -40,5 +38,3 @@ function Header() {
 }
 
 export default Header
-// Sono una Sviluppatrice Front End. Mi piace scrivere codice per dare vita a esperienze digitali. 
-// Sono costantemente in cerca di nuove conoscenze da acquisire per poter trasformare le mie idee in esperienze web significative

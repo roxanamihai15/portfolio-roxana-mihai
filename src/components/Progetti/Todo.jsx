@@ -28,10 +28,6 @@ function Todo() {
                     Per l'interfaccia utente, ho utilizzato React e Material UI. 
                     Mentre per le funzionalità di registrazione, accesso e archiviazione dei dati, ho implementato Firebase.
                 </p>           
-                {/* <p className=' py-2 mb-5 leading-8 project-description'>
-                Una To do list per tracciare i propri impegni giornalieri. <br />
-                L’applicazione è stata realizzata con React e Material UI per creare l'interfaccia utente, mentre per le funzionalità di Database e Signup/Login ho implementato Firebase.
-                </p>            */}
                 <div className='mb-3 text-blue-800 text-sm text-center sm:text-left'>
                     <a href="https://dailytodoroxana.netlify.app/" target='_blank' rel="noreferrer" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'>APRI IL SITO </a>
                     <a href="https://github.com/roxanamihai15/dailytodo" target='_blank' rel="noreferrer" className='btn hover:text-slate-50 cursor-pointer inline-block mr-5 py-2 px-4 border-2 text-indigo-500  border-indigo-400 rounded-md w-full sm:w-fit'> &lt;/&gt;  GUARDA IL CODICE </a>

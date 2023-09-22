@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
 import { FaCss3Alt, FaBootstrap, FaGitAlt, FaReact, FaWordpress } from 'react-icons/fa'
-import { SiJavascript, SiJquery, SiTailwindcss, SiVisualstudio, SiMui } from 'react-icons/si'
+import { SiJavascript, SiTailwindcss, SiVisualstudio, SiMui } from 'react-icons/si'
 import { useInView } from 'react-intersection-observer';
 
 
@@ -54,10 +54,6 @@ function Skills() {
             <SiVisualstudio className='text-4xl  mx-auto text-blue-700'/>
             <p  className='pt-3'>Visual Studio <span className='block text-center'>Code</span></p>
           </div>
-          {/* <div>
-            <SiJquery className='text-4xl  mx-auto text-blue-900'/>
-            <p  className='pt-3'>JQuery</p>
-          </div> */}
           <div>
             <FaWordpress className='text-4xl  mx-auto text-cyan-700'/>
             <p  className='pt-3'>Wordpress</p>
